@@ -8,7 +8,7 @@ Este repositório foi criado para extrair os dados do site https://mhworld.kiran
 --- 
 
 ## Utilização
-Para utilizar o projeto é inicializar o venv da seguinte forma dento do diretório mhw/:
+Para utilizar o projeto é inicializar o venv da seguinte forma dentro do diretório mhw/:
 
 ```bash
 source .venv/bin/activate
