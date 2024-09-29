@@ -31,17 +31,17 @@ class MonsterSpider(scrapy.Spider):
             part = row.css('td:nth-child(1)::text').get()
             if part:
                 part_data = {
-                    'part': part.strip,
-                    'corte': row.css('td:nth-child(2)::text').get().strip(),
-                    'contusao': row.css('td:nth-child(3)::text').get().strip(),
-                    'a_distancia': row.css('td:nth-child(4)::text').get().strip(),
-                    'fogo': row.css('td:nth-child(5)::text').get().strip(),
-                    'agua': row.css('td:nth-child(6)::text').get().strip(),
-                    'gelo': row.css('td:nth-child(7)::text').get().strip(),
-                    'trovao': row.css('td:nth-child(8)::text').get().strip(),
-                    'dragao': row.css('td:nth-child(9)::text').get().strip(),
-                    'status': row.css('td:nth-child(10)::text').get().strip(),
-                    'vigor': row.css('td:nth-child(11)::text').get().strip()
+                    'part': part.strip(),
+                    'corte': (row.css('td:nth-child(2)::text').get() or '').strip(),
+                    'contusao': (row.css('td:nth-child(3)::text').get() or '').strip(),
+                    'a_distancia': (row.css('td:nth-child(4)::text').get() or '').strip(),
+                    'fogo': (row.css('td:nth-child(5)::text').get() or '').strip(),
+                    'agua': (row.css('td:nth-child(6)::text').get() or '').strip(),
+                    'gelo': (row.css('td:nth-child(7)::text').get() or '').strip(),
+                    'trovao': (row.css('td:nth-child(8)::text').get() or '').strip(),
+                    'dragao': (row.css('td:nth-child(9)::text').get() or '').strip(),
+                    'status': (row.css('td:nth-child(10)::text').get() or '').strip(),
+                    'vigor': (row.css('td:nth-child(11)::text').get() or '').strip()
                 }
                 parts_data.append(part_data)
             else:

@@ -1,4 +1,4 @@
-#!/home/yuri/.venv/bin/python
+#!/home/yuri/mhw/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
