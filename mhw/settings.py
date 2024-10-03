@@ -64,6 +64,7 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     "mhw.pipelines.MonsterPipeline": 300,
+    "mhw.pipelines.MonsterVisualizationPipeline": 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
